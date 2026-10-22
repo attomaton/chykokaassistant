@@ -1,0 +1,43 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# Vercel
+.vercel/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local db files (if sqlite used for local dev/testing)
+*.sqlite3
+*.db
+
+.vercel
+
+# Local machine settings, not part of the template
+.claude/settings.local.json
+
+# Secrets again, last word wins over anything above.
+# Keep the negation after the pattern or .env.example gets excluded too.
+.env*
+!.env.example
